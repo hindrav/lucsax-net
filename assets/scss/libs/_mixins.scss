@@ -1,8 +1,9 @@
 @mixin bgs {
-    background-size: cover;
+    max-height: 100%;
+    object-fit: cover;
+    background-size: fill;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 @mixin button {
     width: fit-content;

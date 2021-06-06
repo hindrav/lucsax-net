@@ -52,9 +52,6 @@
       <div class="collapse navbar--collapse">
         <ul class="navbar--nav">
           <li class="nav--item">
-            <a class="nav--link mai-bt" href="#main">Inicio</a>
-          </li>
-          <li class="nav--item">
             <a class="nav--link abo-bt" href="#AboutUs">Sobre nosotros</a>
           </li>
           <li class="nav--item dropdown">
@@ -63,10 +60,10 @@
               Servicios
             </a>
             <ul class="dropdown--menu" id="dropdown--Menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown--item" href="#">Administrado de Impresión</a></li>
-              <li><a class="dropdown--item" href="#">Administrado de Documentos</a></li>
-              <li><a class="dropdown--item" href="#">Venta de equipos</a></li>
-              <li><a class="dropdown--item" href="#">Renta de equipos</a></li>
+              <li><a class="dropdown--item" href="mps.html">Administrado de Impresión</a></li>
+              <li><a class="dropdown--item" href="sad.html">Administrado de Documentos</a></li>
+              <li><a class="dropdown--item" href="rv.html">Venta de equipos</a></li>
+              <li><a class="dropdown--item" href="rv.html">Renta de equipos</a></li>
             </ul>
           </li>
           <li class="nav--item">
@@ -239,27 +236,27 @@
       </div>
     </div>
   </section>
-  <section class="contact">
+  <section class="contact" id="Contact">
     <div class="contact--container">
       <div class="contact--header">
         <h2>Contacto</h2>
         <p>¡Respuesta inmediata, consulte sin compromiso alguno!</p>
       </div>
       <div class="contact--body">
-        <form>
+        <form action="form-contact.php" method="get">
+          <div class="mb-3">
+            <input type="text" class="form-control" id="inputAffair" placeholder="Asunto" name="asunto">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="inputUserName" placeholder="Nombre" name="nombre">
+          </div>
           <div class="mb-3">
             <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
-              placeholder="Correo electrónico">
+              placeholder="Correo electrónico" name="fmail">
             <div id="emailHelp" class="form-text"><b>No compartiremos tus datos con nadie.</b></div>
           </div>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="inputUsername" placeholder="Nombre">
-          </div>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="inputAffair" placeholder="Asunto">
-          </div>
           <div class="mb-3 comments">
-            <input type="text" class="form-control" id="InputComments" placeholder="Comentarios">
+            <input type="text" class="form-control" id="InputComments" placeholder="Comentarios" name="mensaje">
           </div>
           <button type="submit" class="btn--readmore">Enviar</button>
         </form>

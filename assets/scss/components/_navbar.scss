@@ -66,14 +66,12 @@
     padding: 20px 0 10px 15px;
 }
 .askprint {
-    display: flex;
+    margin: 10px auto 0 auto;
     width: 286px;
     height: 35px;
-    margin: 10px 0 0 0;
-    padding: 7px;
+    display: flex;
     justify-content: center;
-    align-self: center;
-    align-items: center;
+    padding: 7px;
     text-align: center;
     font-size: 1.2rem;
     font-weight: bolder;
