@@ -1,0 +1,468 @@
+@media (min-width: $mm) {
+    .navbar--toggler {
+        transform: translate(90px, -18px);
+    }
+    .navbar--toggler {
+        transform: translate(90px, -18px);
+    }
+    .navbar--toggler__icon {
+        font-size: 1.9rem;
+        border: 1px solid #f9f9f9;
+        border-radius: 0%;
+    }
+    .aboutUs--container {
+        .aboutUs--col p {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+        }
+    }
+    .service--box .service--box__col img {
+        width: 240px;
+        margin: 20px auto;
+    }
+    .service--box .service--box__col h2, .service--box #pSEO {
+        width: 320px;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .service--box .service--box__col p {
+        width: 350px;
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+    }
+    .contact--body form input {
+        width: 280px;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 45px 7px;
+    }
+    .footer--container a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+    .nav--footer__link {
+        width: 100%;
+        padding: 8px 8px;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        font-weight: 600;
+    }
+    .dropdown--footer__menu li {
+        font-size: 1rem;
+        margin: 8px auto;
+        line-height: 1.4rem;
+        font-weight: 400;
+    }
+    .dropdown--footer__menu {
+        display: none;
+    }
+    .footer--icon {
+        padding-right: 4px;
+    }
+    .dropdown--footer__menu .dropdown--item {
+        margin-top: 4px;
+        padding-left: 40px;
+    }
+}
+@media (min-width: $ml) {
+    .navbar--toggler {
+        transform: translate(142px, -18px);
+        border: 1px solid #f9f9f9;
+        border-radius: 0%;
+    }
+    .navbar--toggler__icon {
+        font-size: 2rem;
+    }
+    .service--box .service--box__col img {
+        width: 250px;
+    }
+    .service--box .service--box__col h2, .service--box #pSEO, .service--box .service--box__col p {
+        width: 400px;
+    }
+    .service--box .service--box__col img {
+        width: 250px;
+    }
+    .service--box .service--box__col h2, .service--box #pSEO, .service--box .service--box__col p {
+        width: 400px;
+    }
+    .contact--body form input {
+        width: 340px;
+    }
+}
+@media (min-width: $tab) {
+    .navbar--toggler {
+        transform: translate(460px, -18px);
+    }
+    .navbar--toggler__icon {
+        font-size: 2.5rem;
+    }
+    .navbar--container {
+        .navbar--brand img {
+            width: 200px;
+        }
+    }
+    .carousel-inner{
+        .carousel-item img{
+            height: 60vh;
+        }
+    }
+    .services {
+        padding: 50px 0;
+    }
+    .service--box .service--box__col img {
+        width: 270px;
+    }
+    .contact--container{
+        display: flex;
+        padding: 20px 10px;
+        justify-content: space-around;
+    }
+    .contact--body form input{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .contact--body{
+        .comments input{
+            height: 100px;
+        }
+    }
+    .contact--header{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px;
+    }
+    .contact--header h2{
+        font-size: 3rem;
+    }
+    .contact--header p{
+        margin-top: 20px;
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    #emailHelp{
+        font-size: 1rem;
+    }
+    footer {
+        align-items: center;
+        width: 100%;
+    }
+    .footer--container {
+        display: flex;
+        width: 100%;
+        padding: 10px 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav--footer__link {
+        padding: 0;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+    .dropdown--footer__menu li {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+    .dropdown--footer__menu {
+        display: block !important;
+    }
+    .footer--container__menu {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        border-right: 1px solid rgb(177, 177, 177);
+    }
+    .footer--container__menu span {
+        display: none;
+    }
+    .dropdown--footer__menu .dropdown--item {
+        padding: 0;
+    }
+    .logo--footer {
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo--footer img {
+        width: 230px;
+        margin-top: 20px;
+        padding: 15px 20px;
+        filter: grayscale(100%);
+    }
+    .logo--footer p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .nav--footer__item {
+        padding: 0;
+    }
+}
+@media (min-width: $tabL) {
+    .navbar--container {
+        display: flex;
+        padding: 15px 24px 15px 24px;
+    }
+    .navbar--brand img {
+        margin-left: 24px;
+    }
+    .navbar--collapse {
+        width: 100%;
+    }
+    .navbar--nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 40px;
+    }
+    .navbar--nav .nav--item {
+        margin-top: 14px;
+        padding: 14px 18px;
+    }
+    .askprint {
+        display: flex;
+        width: 200px;
+        height: 40px;
+        margin: 14px 0 0 18px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .navbar .active {
+        margin-left: 35px;
+    }
+    .navbar--toggler {
+        display: none;
+    }
+    .dropdown {
+        position: relative;
+    }
+    .navbar .dropdown--toggle:hover {
+        cursor: pointer;
+    }
+    .navbar .dropdown--menu {
+        position: absolute;
+        display: none;
+        left: 0;
+        transform: translate(10px, 8px);
+        padding: 10px 10px;
+        z-index: 50;
+        background-color: white;
+        border-radius: 12px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .dropdown:hover~.dropdown--menu, .dropdown--toggle:hover~.dropdown--menu {
+        display: block !important;
+    }
+    .dropdown--menu:hover {
+        display: block !important;
+    }
+    .dropdown--menu .dropdown--item {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        padding: 10px 25px;
+        white-space: nowrap;
+        text-align: left;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .dropdown--menu li {
+        padding: 0;
+        width: 100%;
+    }
+    .collapse {
+        display: block !important;
+    }
+    .btn--readmore__outline, .btn--readmore {
+        width: 148px;
+        height: 44px;
+        padding: 8px;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    .carousel-inner{
+        .carousel-item img{
+            height: 45vh;
+        }
+    }
+    .aboutUs--container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 35px 0;
+    }
+    .aboutUs--container .aboutUs--col h2 {
+        text-align: center;
+        font-size: 4rem;
+    }
+    .aboutUs--container .aboutUs--col p {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .bod {
+        width: 50%;
+        border-left: 1px solid grey;
+    }
+    .hed {
+        width: 30%;
+    }
+    .service--box {
+        display: flex;
+        height: 75vh;
+        padding: 70px 70px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .service--box:nth-child(3), .service--box:nth-child(1){
+        flex-direction: row;
+    }
+    .service--box .service--box__col {
+        width: 50%;
+    }
+    .service--box .service--box__col img {
+        width: 310px;
+    }
+    .service--box .service--box__col h2, .service--box #pSEO {
+        margin: 0 auto;
+        width: 380px;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+    .service--box .service--box__col p {
+        width: 440px;
+        min-width: 270px;
+        height: 100%;
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+        font-weight: 300;
+        padding: 15px 25px;
+        text-align: center;
+    }
+    .contact--container{
+        display: flex;
+        padding: 20px 10px;
+        justify-content: space-around;
+    }
+    .contact--body form input{
+        width: 400px;
+    }
+    .contact--header h2{
+        font-size: 4rem;
+    }
+    .contact--header p{
+        margin-top: 25px;
+        font-size: 1.6rem;
+    }
+    footer {
+        padding: 0;
+    }
+    .footer--container a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+    .nav--footer__link {
+        width: 100%;
+        padding: 0;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        font-weight: 600;
+    }
+    .dropdown--footer__menu li {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        font-weight: 400;
+    }
+    .dropdown--footer__menu .dropdown--item {
+        margin-top: 4px;
+    }
+}
+@media (min-width: $generic-lap) {
+    .askprint {
+        width: 230px;
+        height: 35px;
+        margin: 10px 0 0 18px;
+    }
+    .carousel-inner{
+        .carousel-item img{
+            height: 45vh;
+        }
+    }
+    .services {
+        padding: 0;
+    }
+    .service--box:nth-child(2) {
+        background: $closeToWhite;
+    }
+    .service--box .service--box__col {
+        margin: 0 -40px;
+    }
+    .service--box .service--box__col img {
+        width: 330px;
+    }
+    .contact--header{
+        margin-left: 80px;
+    }
+    .contact--header h2{
+        font-size: 4.1rem;
+    }
+    .contact--body{
+        margin-left: 25px;
+    }
+    .contact--container{
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .contact--body form input {
+        width: 480px;
+    }
+    .footer--container {
+        padding: 40px 40px;
+    }
+}
+@media (min-width: $lap) {
+    .navbar--container {
+        display: flex;
+        padding: 15px 24px 15px 24px;
+    }
+    .navbar--brand img {
+        margin-left: 24px;
+    }
+    .navbar--nav {
+        .nav--item {
+            padding: 10px 0 0 34px;
+        }
+    }
+    .aboutUs--container .aboutUs--col h2 {
+        text-align: center;
+        font-size: 4rem;
+    }
+    .service--box {
+        justify-content: space-evenly;
+    }
+    .service--box .service--box__col img {
+        width: 340px;
+    }
+    .service--box .service--box__col h2, .service--box #pSEO {
+        width: 400px;
+    }
+    .service--box .service--box__col p {
+        width: 400px;
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+    }
+}

@@ -1,0 +1,20 @@
+@mixin bgs {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@mixin button {
+    width: fit-content;
+    height: fit-content;
+    padding: 11px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: none;
+}
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
