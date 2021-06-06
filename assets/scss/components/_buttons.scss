@@ -1,0 +1,50 @@
+button:hover {
+    cursor: pointer;
+}
+.btn--readmore__outline {
+    @include button;
+    border: 1px solid gray;
+    color: $just-white;
+    font-weight: 600;
+}
+.btn--readmore__outline:hover {
+    background: $just-white;
+    color: black;
+    transition: 0.1s;
+}
+.btn--readmore {
+    @include button;
+    border: 1px solid rgb(179, 179, 179);
+    color: $warm-black;
+    font-weight: 400;
+}
+.btn--readmore:hover {
+    background: $warm-black;
+    color: $just-white;
+    transition: 0.1s;
+}
+.btn--contact {
+    width: 160px;
+    height: 45px;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: $warm-black;
+    border: 1px solid gray;
+    color: $just-white;
+    font-weight: 600;
+}
+.btn--contact:hover {
+    background: $just-white;
+    color: black;
+    transition: 0.1s;
+}
+.next, .previous {
+    border: 2px solid #303030;
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+    background: none;
+}
