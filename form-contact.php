@@ -56,5 +56,3 @@
     'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
-
-Gracias! Nos pondremos en contacto contigo
