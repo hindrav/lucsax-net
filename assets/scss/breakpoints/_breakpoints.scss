@@ -36,6 +36,9 @@
     .mps {
         background-image: url('images/MM/SAI.png');
     }
+    .sad{
+        background-image: url('images/MM/SAD.png');
+    }
     footer {
         display: flex;
         align-items: center;
@@ -99,6 +102,9 @@
     .mps {
         background-image: url('images/ML/SAI.png');
     }
+    .sad{
+        background-image: url('images/ML/SAD.png');
+    }
 }
 @media (min-width: $tab) {
     .navbar--toggler {
@@ -160,6 +166,15 @@
     }
     .mps {
         background-image: url('images/TAB/SAI.png');
+    }
+    .sad{
+        background-image: url('images/TAB/SAD.png');
+    }
+    .hBenefits--container__cards {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
     footer {
         align-items: center;
@@ -387,6 +402,32 @@
     .mps {
         background-image: url('images/TABL/SAI.png');
     }
+    .sad{
+        background-image: url('images/TABL/SAD.png');
+    }
+    .hBenefits--foter-container__header {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .hBenefits--foter-container__cards{
+        width: 70%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .hBenefits--footer__item {
+        width: 320px;
+        display: flex;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .hBenefits--footer__item {
+        margin: 15px 0;
+    }
+    .hBenefits--footer__item p{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        text-align: center;
+    }
     footer {
         padding: 0;
     }
@@ -456,6 +497,9 @@
     }
     .mps {
         background-image: url('images/LAP/SAI.png');
+    }
+    .sad{
+        background-image: url('images/LAP/SAD.png');
     }
     .footer--container {
         padding: 40px 40px;

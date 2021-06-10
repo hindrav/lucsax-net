@@ -36,7 +36,6 @@ const k4 = window.matchMedia('(min-width: 2559px)');
 var navCollapse = document.querySelector('.navbar--collapse');
 var services = document.querySelector('.dropdown--toggle');
 var dropM = document.querySelector('.dropdown--menu');
-var navLink1 = document.querySelector('.mai-bt');
 var navLink2 = document.querySelector('.abo-bt');
 var navLink3 = document.querySelector('.con-bt');
 
@@ -49,9 +48,10 @@ if(sm.matches || mm.matches || ml.matches || tab.matches){
         }
         return closing;
     }
-    navLink1.onclick = close();
-    navLink2.onclick = close();
-    navLink3.onclick = close();
+    try{
+        navLink2.onclick = close();
+        navLink3.onclick = close();
+    }catch(e){}
     // Dropdown Menu
     function serviceDisplay(){
         if(dropM.style.display === 'none'){
@@ -64,11 +64,9 @@ if(sm.matches || mm.matches || ml.matches || tab.matches){
     services.addEventListener('click', serviceDisplay());
 }
 
-
 // Mision 'n vision container
 var button2 = document.querySelector('.mnv');
 var mnvContainer = document.querySelector('.misionVision--container');
-mnvContainer.style.display = 'block';
 
 function misionVision() {
     if (mnvContainer.style.display == 'none') {
@@ -77,7 +75,9 @@ function misionVision() {
         mnvContainer.style.display = 'none';
     }
 }
-button2.addEventListener('click', misionVision());
+try{
+    button2.addEventListener('click', misionVision());
+}catch(e){}
 
 // Footer items
 var dtf1 = document.querySelector('.nvd1');

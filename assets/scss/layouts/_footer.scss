@@ -26,16 +26,16 @@ footer {
 .nav--footer__link {
     width: 100%;
     padding: 0 8px;
-    font-size: 1.3rem;
-    line-height: 1.7rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     font-weight: 600;
 }
 .nav--footer__item{
     margin-top: 10px;
 }
 .dropdown--footer__menu li {
-    font-size: 1.3rem;
-    line-height: 1.4rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     margin: 10px auto;
     font-weight: 400;
     color: black;
@@ -58,15 +58,16 @@ footer {
     align-items: flex-start;
 }
 .logo--footer p{
-    font-size: 0.9rem;
-    color: #1d1d1d;
     margin-top: 15px;
     padding-left: 24px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #1d1d1d;
 }
 .logo--footer img{
-    width: 200px;
     margin-top: 20px;
-    filter: grayscale(100%);
     padding-left: 24px;
+    width: 200px;
+    filter: grayscale(100%);
 
 }
