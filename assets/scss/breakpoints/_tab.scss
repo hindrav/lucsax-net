@@ -1,0 +1,130 @@
+
+@media (min-width: $tab) {
+    .navbar--toggler {
+        transform: translate(460px, -18px);
+    }
+    .navbar--toggler__icon {
+        font-size: 2.5rem;
+    }
+    .navbar--container {
+        .navbar--brand img {
+            width: 200px;
+        }
+    }
+    .carousel-inner {
+        .carousel-item img {
+            height: 60vh;
+        }
+    }
+    .services {
+        padding: 50px 0;
+    }
+    .service--box .service--box__col img {
+        width: 270px;
+    }
+    .contact--container {
+        display: flex;
+        padding: 20px 10px;
+        justify-content: space-around;
+    }
+    .contact--body form input {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .contact--body {
+        .comments input {
+            height: 100px;
+        }
+    }
+    .contact--header {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px;
+    }
+    .contact--header h2 {
+        font-size: 3rem;
+    }
+    .contact--header p {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    #emailHelp {
+        font-size: 1rem;
+    }
+    .service--banner {
+        height: 45vh;
+        background-size: cover;
+    }
+    .mps {
+        background-image: url('images/TAB/SAI.png');
+    }
+    .sad{
+        background-image: url('images/TAB/SAD.png');
+    }
+    .hBenefits--container__cards {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    footer {
+        align-items: center;
+        width: 100%;
+    }
+    .footer--container {
+        display: flex;
+        width: 100%;
+        padding: 10px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav--footer__link {
+        padding: 0;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+    .dropdown--footer__menu li {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+    .dropdown--footer__menu {
+        display: block !important;
+    }
+    .footer--container__menu {
+        margin: 0 auto;
+        padding: 20px;
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        border-right: 1px solid rgb(177, 177, 177);
+    }
+    .footer--container__menu span {
+        display: none;
+    }
+    .dropdown--footer__menu .dropdown--item {
+        padding: 0;
+    }
+    .logo--footer {
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .logo--footer img {
+        width: 230px;
+        margin-top: 20px;
+        padding: 15px 20px;
+        filter: grayscale(100%);
+    }
+    .logo--footer p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .nav--footer__item {
+        margin: 0 20px;
+    }
+}

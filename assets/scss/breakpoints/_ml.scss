@@ -1,0 +1,31 @@
+@media (min-width: $ml) {
+    .navbar--toggler {
+        transform: translate(142px, -18px);
+        border: 1px solid #f9f9f9;
+        border-radius: 0%;
+    }
+    .navbar--toggler__icon {
+        font-size: 2rem;
+    }
+    .service--box .service--box__col img {
+        width: 250px;
+    }
+    .service--box .service--box__col h2, .service--box #pSEO, .service--box .service--box__col p {
+        width: 400px;
+    }
+    .service--box .service--box__col img {
+        width: 250px;
+    }
+    .service--box .service--box__col h2, .service--box #pSEO, .service--box .service--box__col p {
+        width: 400px;
+    }
+    .contact--body form input {
+        width: 340px;
+    }
+    .mps {
+        background-image: url('images/ML/SAI.png');
+    }
+    .sad{
+        background-image: url('images/ML/SAD.png');
+    }
+}

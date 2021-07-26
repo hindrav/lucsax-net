@@ -1,0 +1,77 @@
+@media (min-width: $mm) {
+    .navbar--toggler {
+        transform: translate(90px, -18px);
+    }
+    .navbar--toggler {
+        transform: translate(90px, -18px);
+    }
+    .navbar--toggler__icon {
+        font-size: 1.9rem;
+        border: 1px solid #f9f9f9;
+        border-radius: 0%;
+    }
+    .aboutUs--container {
+        .aboutUs--col p {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+        }
+    }
+    .service--box .service--box__col img {
+        width: 240px;
+        margin: 20px auto;
+    }
+    .service--box .service--box__col h2, .service--box #pSEO {
+        width: 320px;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .service--box .service--box__col p {
+        width: 350px;
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+    }
+    .contact--body form input {
+        width: 280px;
+    }
+    .mps {
+        background-image: url('images/MM/SAI.png');
+    }
+    .sad{
+        background-image: url('images/MM/SAD.png');
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 45px 7px;
+    }
+    .footer--container a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+    .nav--footer__link {
+        width: 100%;
+        padding: 8px 8px;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        font-weight: 600;
+    }
+    .dropdown--footer__menu li {
+        font-size: 1rem;
+        margin: 8px auto;
+        line-height: 1.4rem;
+        font-weight: 400;
+    }
+    .dropdown--footer__menu {
+        display: none;
+    }
+    .footer--icon {
+        padding-right: 4px;
+    }
+    .dropdown--footer__menu .dropdown--item {
+        margin-top: 4px;
+        padding-left: 40px;
+    }
+}
