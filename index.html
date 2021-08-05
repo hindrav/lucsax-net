@@ -246,18 +246,17 @@
       <div class="contact--body">
         <form action="form-contact.php" method="get">
           <div class="mb-3">
-            <input type="text" class="form-control" id="inputAffair" placeholder="Asunto" name="asunto">
+            <input type="text" class="form-control" id="inputAffair" placeholder="Asunto" name="asunto" minlength="3" required>
           </div>
           <div class="mb-3">
-            <input type="text" class="form-control" id="inputUserName" placeholder="Nombre" name="nombre">
+            <input type="text" class="form-control" id="inputUserName" placeholder="Nombre" name="nombre" minlength="3" autocomplete="name" required />
           </div>
           <div class="mb-3">
             <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
-              placeholder="Correo electrónico" name="fmail">
-            <div id="emailHelp" class="form-text"><b>No compartiremos tus datos con nadie.</b></div>
+              placeholder="Correo electrónico" name="fmail" autocomplete="Correo electrónico"  required />
           </div>
           <div class="mb-3 comments">
-            <input type="text" class="form-control" id="InputComments" placeholder="Comentarios" name="mensaje">
+            <input type="text" class="form-control" id="InputComments" placeholder="Comentarios" name="mensaje" required />
           </div>
           <button type="submit" value="Submit" class="btn--readmore">Enviar</button>
         </form>
