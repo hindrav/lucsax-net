@@ -47,3 +47,6 @@
 .service--box:nth-child(3), .service--box:nth-child(1){
     flex-direction: column-reverse;
 }
+.service--box .service--box__col {
+    width: 100%;
+}

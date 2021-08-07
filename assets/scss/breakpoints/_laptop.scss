@@ -8,12 +8,20 @@
             padding: 0 40px 0 34px;
         }
     }
+    .carousel-inner {
+        .carousel-item img {
+            height: 41vh;
+        }
+    }
     .aboutUs--container .aboutUs--col h2 {
         text-align: center;
         font-size: 4rem;
     }
     .service--box {
         justify-content: space-evenly;
+    }
+    .service--box .service--box__col {
+        width: 37%;
     }
     .service--box .service--box__col img {
         width: 340px;
