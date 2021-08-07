@@ -77,31 +77,34 @@
     </div>
   </nav>
   <!-- Assistant -->
-  <div class="assistant-container">
-    <form class="form" action="a1.php">
-      <h2 class="assistant-head-title">¿Qué tipo de dispositivo necesita?</h2>
+  <div class="assistant">
+    <form class="assistant__form" action="a1.php">
+      <h2 class="assistant__head-title">¿Qué tipo de dispositivo necesita?</h2>
       <div class="form__container">
         <label class="assistant-1 box">
-          <img class="icon-print icon" src="./images/icons/IM.svg" alt="impresora.icon" aria-hidden="true">
-          <span class="assistant-1-title">IMPRESORA</span>
+          <img class="icon-print svg" src="./images/icons/IM.svg" alt="impresora.icon" aria-hidden="true">
+          <p class="assistant-1__title">IMPRESORA</p>
           <p class="assistant-1__text">Quiero una Impresora a medida de mi presupuesto.</p>
-          <input name="intent" type="radio">
+          <input class="Punto--selecion" name="intent" type="radio">
         </label>
         <label class="assistant-2 box">
-          <img class="multifunciona-icon icon" src="./images/icons/mp51.svg" alt="multifuncional.icon"
+          <img class="multifunciona-icon svg" src="./images/icons/mp51.svg" alt="multifuncional.icon"
             aria-hidden="true">
-          <span class="assistant-2__title">MULTIFUNCIONAL (COPIA-IMPRESIÓN-ESCANEO)</span>
+          <p class="assistant-2__title">MULTIFUNCIONAL (COPIA-IMPRESIÓN-ESCANEO)</p>
           <p class="assistant-2__text">Elegir una Impresora de nuestro catalogo.</p>
-          <input name="intent" type="radio">
+          <input class="Punto--selecion" name="intent" type="radio">
         </label>
         <label class="assistant-3 box">
-          <i class="fab fa-wpforms" aria-hidden="true"></i>
-          <span class="assistant-3__title">FORMATO AMPLIO</span>
+          <i class="fab fa-wpforms icon" aria-hidden="true"></i>
+          <p class="assistant-3__title">FORMATO AMPLIO</p>
           <p class="assistant-3__text">Recarga, reparacion y mantenimiento de Impresoras y multifuncionales.</p>
-          <input name="intent" type="radio">
+          <input class="Punto--selecion" name="intent" type="radio">
         </label>
-        <!-- <input class="buttom-siguiente" disable type="submit" value="Siguiente"> -->
       </div>
+      <div class="form__buttom">
+        <input class="buttom__siguiente" disable type="submit" value="Siguiente">
+      </div>
+
     </form>
   </div>
   <!-- Footer -->

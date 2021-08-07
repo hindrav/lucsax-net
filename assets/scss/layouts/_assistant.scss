@@ -1,49 +1,93 @@
-* {
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
-}
-.assistant-container {
+.assistant{
+    display: flex;
     width: 100%;
-    border: 3px solid hotpink;
+    height: 100%;
+    padding: 50px 10px;
+    border:2px solid green;
 }
-.form {
-    width: 100%;
+
+.assistant__form{
+    display: flex;
+    & .box{
+        margin: 10px 0;
+        width: 190px;
+        height: 190px;
+        border: 1px solid $luc;
+    }
 }
-.assistant-head-title {
-    margin: 1.5rem;
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
-.assistant-head-title {
+
+//Formulario 1 Impresora
+.assistant-1{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
     text-align: center;
-    font-size: 2rem;
-    margin: 2rem;
-    border: 3px solid red;
+    order:1;
 }
-.box {
-    width: 190px;
-    height: 190px;
-    margin: 0 auto;
-    border: 1px solid $luc;
+
+.assistant-1__title{
+    font-size: 1.6rem;
+    margin: 10px;
 }
-.icon {
-    width: 100px;
+
+.assistant-1__text{
+    font-size: 1.2rem;
+    padding: 10px;
 }
-.assistant-1 {
-    align-content: center;
-    order: 1;
-    background-color: rgba(255, 255, 255, 01);
+
+//Formulario 2 multifuncional
+.assistant-2{
+    display:flex;
+    flex-direction: column;
+    align-content: flex-start;
+    text-align: center;
+    order:3;
 }
-.icon-print {}
-.assistant-2 {
-    order: 3;
-    background-color: rgba(255, 255, 255, 01);
+
+.assistant-2__title{
+    font-size: 1.2rem;
+    margin: 10px;
 }
-.multifuncional.icon {}
-.assistant-3 {
+
+.assistant-2__text{
+    font-size: 1rem;
+    margin: 10px;
+}
+
+//Formulario 3 Formato Amplio
+.assistant-3{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
     order: 2;
-    background-color: rgba(255, 255, 255, 01);
 }
-.icon-form {}
-// .buttom-siguiente{
-//     margin: 10px;
-// }
+
+.assistant-3__title{
+    font-size: 1.2rem;
+    margin: 25px;
+}
+
+.assistant-3__text{
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.Punto--seleccion{
+    margin: 5px;
+}
+.svg{
+    width: 340px;
+    transform: scale(0.3);
+    // filter: invert(59%) sepia(47%) saturate(794%) hue-rotate(174deg) brightness(105%) contrast(94%);
+    filter: invert(21%) sepia(82%) saturate(1133%) hue-rotate(174deg) brightness(98%) contrast(97%);
+    border: 3px solid yellow;
+}
