@@ -118,3 +118,11 @@ dtf3.addEventListener('click', dfmx3());
 dfm1.style.display = 'none';
 dfm2.style.display = 'none';
 dfm3.style.display = 'none';
+
+const formCard = document.querySelectorAll("label.assistant__box");
+const cards = []
+
+
+cards.forEach(() => {
+    formCard.style = "border: 3px solid #50B9F8;";
+});
