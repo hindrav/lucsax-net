@@ -31,4 +31,13 @@
     .assistant__head-title{
         font-size: 2.5rem;
     }
+    .devices{
+        width: $ml;
+        margin: 0 auto;
+    }
+    .assistant{
+        &__form{
+            width: $ml;
+        }
+    }
 }

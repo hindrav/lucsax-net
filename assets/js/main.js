@@ -23,7 +23,6 @@ function myNav() {
 button.addEventListener('click', myNav());
 
 // Media functions
-// Media Querys
 const sm = window.matchMedia('(min-width: 319px)');
 const mm = window.matchMedia('(min-width: 374px)');
 const ml = window.matchMedia('(min-width: 424px)');
@@ -40,23 +39,23 @@ var navLink2 = document.querySelector('.abo-bt');
 var navLink3 = document.querySelector('.con-bt');
 
 // sm to tab
-if(sm.matches || mm.matches || ml.matches || tab.matches){
+if (sm.matches || mm.matches || ml.matches || tab.matches) {
     // collapsing items on navbar
-    function close(){
-        let closing = () =>{
+    function close() {
+        let closing = () => {
             navCollapse.style.display = 'none';
         }
         return closing;
     }
-    try{
+    try {
         navLink2.onclick = close();
         navLink3.onclick = close();
-    }catch(e){}
+    } catch (e) {}
     // Dropdown Menu
-    function serviceDisplay(){
-        if(dropM.style.display === 'none'){
+    function serviceDisplay() {
+        if (dropM.style.display === 'none') {
             dropM.style.display = 'block';
-        } else{
+        } else {
             dropM.style.display = 'none';
         }
     }
@@ -75,9 +74,9 @@ function misionVision() {
         mnvContainer.style.display = 'none';
     }
 }
-try{
+try {
     button2.addEventListener('click', misionVision());
-}catch(e){}
+} catch (e) {}
 
 // Footer items
 var dtf1 = document.querySelector('.nvd1');
@@ -119,10 +118,102 @@ dfm1.style.display = 'none';
 dfm2.style.display = 'none';
 dfm3.style.display = 'none';
 
-const formCard = document.querySelectorAll("label.assistant__box");
-const cards = []
+// All about forms
+// buttons
+// Next
+const next1 = document.querySelector('#next-button1');
+const next2 = document.querySelector('#next-button2');
+const next3 = document.querySelector('#next-button3');
+const next4 = document.querySelector('#next-button4');
+const next5 = document.querySelector('#next-button5');
+const next6 = document.querySelector('#next-button6');
+const next7 = document.querySelector('#next-button7');
+// Return
+const back2 = document.querySelector('#back-button2');
+const back3 = document.querySelector('#back-button3');
+const back4 = document.querySelector('#back-button4');
+const back5 = document.querySelector('#back-button5');
+const back6 = document.querySelector('#back-button6');
+const back7 = document.querySelector('#back-button7');
+// forms
+const form1 = document.querySelector('#assistant1');
+const form2 = document.querySelector('#assistant2');
+const form3 = document.querySelector('#assistant3');
+const form4 = document.querySelector('#assistant4');
+const form5 = document.querySelector('#assistant5');
+const form6 = document.querySelector('#assistant6');
+const form7 = document.querySelector('#assistant7');
 
+const formArr = [form1, form2, form3, form4, form5, form6, form7, form8];
 
-cards.forEach(() => {
-    formCard.style = "border: 3px solid #50B9F8;";
-});
+next1.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(-100%);"
+    });
+}
+
+back2.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(0);"
+    });
+}
+
+next2.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(-200%);"
+    });
+}
+
+back3.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(-100%);"
+    });
+}
+
+next3.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(-300%);"
+    });
+}
+
+back4.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(-200%);"
+    });
+}
+
+next4.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(-400%);"
+    });
+}
+
+back4.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(-200%);"
+    });
+}
+
+next5.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(-500%);"
+    });
+}
+
+back5.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(-300%);"
+    });
+}
+
+next6.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(-600%);"
+    });
+}
+
+back6.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(-400%);"
+    });
+}
