@@ -144,7 +144,7 @@ const form5 = document.querySelector('#assistant5');
 const form6 = document.querySelector('#assistant6');
 const form7 = document.querySelector('#assistant7');
 
-const formArr = [form1, form2, form3, form4, form5, form6, form7, form8];
+const formArr = [form1, form2, form3, form4, form5, form6, form7];
 
 next1.onclick = () => {
     formArr.forEach((element) => {
