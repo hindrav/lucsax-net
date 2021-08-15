@@ -53,4 +53,13 @@
     .footer--container {
         padding: 40px 40px;
     }
+    .devices{
+        width: $generic-lap;
+        margin: 0 auto;
+    }
+    .assistant{
+        &__form{
+            width: $generic-lap;
+        }
+    }
 }

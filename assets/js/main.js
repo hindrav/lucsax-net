@@ -23,7 +23,6 @@ function myNav() {
 button.addEventListener('click', myNav());
 
 // Media functions
-// Media Querys
 const sm = window.matchMedia('(min-width: 319px)');
 const mm = window.matchMedia('(min-width: 374px)');
 const ml = window.matchMedia('(min-width: 424px)');
@@ -119,10 +118,16 @@ dfm1.style.display = 'none';
 dfm2.style.display = 'none';
 dfm3.style.display = 'none';
 
-const formCard = document.querySelectorAll("label.assistant__box");
-const cards = []
+// All about forms
+const next1 = document.querySelector('.next-button1');
+const next2 = document.querySelector('.next-button2');
+const next3 = document.querySelector('.next-button3');
+const back2 = document.querySelector('.back-button2');
+const back3 = document.querySelector('.back-button3');
 
-
-cards.forEach(() => {
-    formCard.style = "border: 3px solid #50B9F8;";
-});
+if (sm.matches){
+    next1.onclick = function(){
+        form1.style = "transform: translate(-320px, 0);";
+        form2.style = "transform: translate(-320px, 0);";
+    }
+}

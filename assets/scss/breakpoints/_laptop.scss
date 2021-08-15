@@ -41,4 +41,13 @@
         width: 30%;
         padding: 20px;
     }
+    .devices{
+        width: $lap;
+        margin: 0 auto;
+    }
+    .assistant{
+        &__form{
+            width: $lap;
+        }
+    }
 }
