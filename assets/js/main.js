@@ -119,15 +119,19 @@ dfm2.style.display = 'none';
 dfm3.style.display = 'none';
 
 // All about forms
-const next1 = document.querySelector('.next-button1');
-const next2 = document.querySelector('.next-button2');
-const next3 = document.querySelector('.next-button3');
-const back2 = document.querySelector('.back-button2');
-const back3 = document.querySelector('.back-button3');
+// buttons
+const next1 = document.querySelector('#next-button1');
+const next2 = document.querySelector('#next-button2');
+const next3 = document.querySelector('#next-button3');
+const back2 = document.querySelector('#back-button2');
+const back3 = document.querySelector('#back-button3');
+// forms
+const form1 = document.querySelector('#assistant1');
+const form2 = document.querySelector('#assistant2');
+const form3 = document.querySelector('#assistant3');
 
-if (sm.matches){
-    next1.onclick = function(){
-        form1.style = "transform: translate(-320px, 0);";
-        form2.style = "transform: translate(-320px, 0);";
-    }
+next1.onclick = () => {
+    form1.style = "transform: translate(-100%, 0);"
+    form2.style = "transform: translate(-100%, 0);"
+    form3.style = "transform: translate(-100%, 0);"
 }
