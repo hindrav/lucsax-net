@@ -12,9 +12,6 @@
   ],
   "author": "hindrav",
   "license": "MIT",
-  "dependencies": {
-    "horizontal-scroll": "^1.1.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hindrav/lucsax-net.git"
