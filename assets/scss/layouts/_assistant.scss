@@ -35,7 +35,6 @@
     margin: 10px 15px;
     width: 240px;
     height: 250px;
-    // border: 1px solid $luc;
   }
   &__footer {
     &--box {
@@ -109,5 +108,8 @@
   // filter: invert(59%) sepia(47%) saturate(794%) hue-rotate(174deg) brightness(105%) contrast(94%);
   filter: invert(21%) sepia(82%) saturate(1133%) hue-rotate(174deg)
     brightness(98%) contrast(97%);
+}
+.selected{
+  border: 3px solid $luc;
 }
 

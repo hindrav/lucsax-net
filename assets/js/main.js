@@ -145,6 +145,17 @@ const form6 = document.querySelector('#assistant6');
 const form7 = document.querySelector('#assistant7');
 
 const formArr = [form1, form2, form3, form4, form5, form6, form7];
+const checkButton = document.querySelectorAll('.assistant__footer--input');
+
+checkButton.forEach((element) => {
+    element.addEventListener('click', () => {
+        if(element != null){
+            element.parentNode.parentNode.classList.add('selected');
+        }
+        // const activeElement = document.activeElement;
+    });
+})
+
 
 next1.onclick = () => {
     formArr.forEach((element) => {
@@ -215,5 +226,11 @@ next6.onclick = () => {
 back6.onclick = () => {
     formArr.forEach((element) => {
         element.style = "transform: translateX(-400%);"
+    });
+}
+
+back7.onclick = () => {
+    formArr.forEach((element) => {
+        element.style = "transform: translateX(-500%);"
     });
 }
