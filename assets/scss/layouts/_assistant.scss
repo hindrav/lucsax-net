@@ -3,7 +3,6 @@
   justify-content: start;
   width: 320px;
   overflow: hidden;
-  border: 3px solid green;
 }
 .assistant {
   transition: 0.5s;
@@ -31,7 +30,6 @@
   &__box {
     border-radius: 9px;
     background-color: rgba($color: #05507e, $alpha: 0.1);
-    // box-shadow: 2px 1px 1px 1px rgb(0, 4, 7);
     margin: 10px 15px;
     width: 240px;
     height: 250px;
@@ -42,7 +40,6 @@
       justify-content: center;
       height: 42px;
       width: 100%;
-      // border: 2px solid yellow;
     }
     &--input {
       margin: 5px;
@@ -51,7 +48,6 @@
   &__form {
     display: flex;
     flex-direction: column;
-    border: 3px solid red;
     width: 320px;
     margin: 0 auto;
     &--header {
@@ -67,14 +63,12 @@
     margin: 0 auto;
     height: 100%;
     width: 80%;
-    // border: 2px solid greenyellow;
   }
   &__header {
     &--box {
       display: flex;
       justify-content: center;
       height: 80px;
-      // border: 1px solid fuchsia;
     }
   }
 }
@@ -86,7 +80,7 @@
     height: 100%;
     margin: 10px;
     padding: 10px;
-    & input{
+    & button{
       margin: 0 10px;
     }
   }
@@ -96,7 +90,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    // border: 3px solid red;
   }
 }
 .icon-print {
