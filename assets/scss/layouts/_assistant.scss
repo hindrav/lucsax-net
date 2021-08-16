@@ -33,6 +33,9 @@
     margin: 10px 15px;
     width: 240px;
     height: 250px;
+    &:active{
+      border: 3px solid $luc;
+    }
   }
   &__footer {
     &--box {

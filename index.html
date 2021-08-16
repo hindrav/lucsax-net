@@ -273,21 +273,21 @@
         <p>¡Respuesta inmediata, consulte sin compromiso alguno!</p>
       </div>
       <div class="contact--body">
-        <form action="form-contact.php" method="get">
+        <form action="form-contact.php" id="contact-form" method="get">
           <div class="mb-3">
-            <input type="text" class="form-control" id="inputAffair" placeholder="Asunto" name="asunto" minlength="3" required>
+            <input type="text" class="form-control" id="inputAffair" placeholder="Asunto" name="affair" minlength="3" required>
           </div>
           <div class="mb-3">
-            <input type="text" class="form-control" id="inputUserName" placeholder="Nombre" name="nombre" minlength="3" autocomplete="name" required />
+            <input type="text" class="form-control" id="inputUserName" placeholder="Nombre" name="name" minlength="3" autocomplete="name" required />
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
-              placeholder="Correo electrónico" name="fmail" autocomplete="Correo electrónico"  required />
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+              placeholder="Correo electrónico" name="mail" autocomplete="Correo electrónico"  required />
           </div>
           <div class="mb-3 comments">
-            <input type="text" class="form-control" id="InputComments" placeholder="Comentarios" name="mensaje" required />
+            <input type="text" class="form-control" id="inputComments" placeholder="Comentarios" name="msg" required />
           </div>
-          <button type="submit" value="Submit" class="btn--readmore">Enviar</button>
+          <button type="submit" value="Submit" id="send-contact-form" class="btn--readmore">Enviar</button>
         </form>
       </div>
     </div>
@@ -340,6 +340,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
   <!--load all styles -->
   <script defer src="./assets/js/all.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="assets/js/main.js" type="text/javascript"></script>
 </body>
 
