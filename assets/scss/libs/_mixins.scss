@@ -7,9 +7,9 @@
 }
 @mixin button {
     width: fit-content;
-    height: fit-content;
+    height: 37px !important;
     padding: 11px;
-    border-radius: 8px;
+    border-radius: 12px !important;
     font-size: 1rem;
     font-family: 'Rubik', sans-serif;
     text-transform: uppercase;

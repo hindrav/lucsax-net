@@ -78,10 +78,11 @@
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    color: #1f639b;
-    background: none;
-    border: 1px solid #1f639b;
-    border-radius: 7px;
+    // color: #1f639b;
+    background: $lucontrast2;
+    color: white;
+    // border: 1px solid #1f639b;
+    border-radius: 10px;
     &:hover{
         background: $lucontrast;
         color: $just-white;

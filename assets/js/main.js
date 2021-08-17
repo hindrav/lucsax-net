@@ -145,92 +145,114 @@ const form6 = document.querySelector('#assistant6');
 const form7 = document.querySelector('#assistant7');
 
 const formArr = [form1, form2, form3, form4, form5, form6, form7];
-const checkButton = document.querySelectorAll('.assistant__footer--input');
+try{
+    next1.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(-100%);"
+        });
+    }
 
-checkButton.forEach((element) => {
-    element.addEventListener('click', () => {
-        if(element != null){
-            element.parentNode.parentNode.classList.add('selected');
-        }
-        // const activeElement = document.activeElement;
-    });
-})
+    back2.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(0);"
+        });
+    }
+
+    next2.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(-200%);"
+        });
+    }
+
+    back3.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(-100%);"
+        });
+    }
+
+    next3.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(-300%);"
+        });
+    }
+
+    back4.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(-200%);"
+        });
+    }
+
+    next4.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(-400%);"
+        });
+    }
+
+    back4.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(-200%);"
+        });
+    }
+
+    next5.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(-500%);"
+        });
+    }
+
+    back5.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(-300%);"
+        });
+    }
+
+    next6.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(-600%);"
+        });
+    }
+
+    back6.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(-400%);"
+        });
+    }
+
+    back7.onclick = () => {
+        formArr.forEach((element) => {
+            element.style = "transform: translateX(-500%);"
+        });
+    }
+}catch (e) {}
 
 
-next1.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(-100%);"
-    });
-}
+// Contact form
+const sendContactButton = document.getElementById('send-contact-form');
+const contactForm = document.getElementById('contact-form');
+const mail = document.getElementById('inputEmail');
+const username = document.getElementById('inputUserName');
+const affair = document.getElementById('inputAffair');
+const msg = document.getElementById('inputComments');
 
-back2.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(0);"
-    });
-}
-
-next2.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(-200%);"
-    });
-}
-
-back3.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(-100%);"
-    });
-}
-
-next3.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(-300%);"
-    });
-}
-
-back4.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(-200%);"
-    });
-}
-
-next4.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(-400%);"
-    });
-}
-
-back4.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(-200%);"
-    });
-}
-
-next5.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(-500%);"
-    });
-}
-
-back5.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(-300%);"
-    });
-}
-
-next6.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(-600%);"
-    });
-}
-
-back6.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(-400%);"
-    });
-}
-
-back7.onclick = () => {
-    formArr.forEach((element) => {
-        element.style = "transform: translateX(-500%);"
-    });
-}
+affair.addEventListener('change', () => {
+    if(affair != null){
+        username.addEventListener('change', () => {
+            if(username != null){
+                mail.addEventListener('change', () => {
+                    if(mail != null){
+                        msg.addEventListener('change', () => {
+                            if(msg != null){
+                                sendContactButton.onclick = () => {
+                                    swal("Mensaje enviado", "", "success");
+                                }
+                                setTimeout(() => {
+                                    window.location.reload();
+                                }, 1500);
+                            }
+                        })
+                    }
+                })
+            }
+        });
+    }
+});
