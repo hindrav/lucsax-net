@@ -1,12 +1,11 @@
 // Loader
 window.onload = () => {
-    let loader = document.getElementById('loader');
-    loader.style.visibility = 'hidden';
-    loader.style.opacity = 0;
-}
-
-// Navbar
-// Toggler icon functionality
+        let loader = document.getElementById('loader');
+        loader.style.visibility = 'hidden';
+        loader.style.opacity = 0;
+    }
+    // Navbar
+    // Toggler icon functionality
 var button = document.querySelector('.navbar--toggler__icon');
 var collapse = document.querySelector('.collapse');
 var navbar = document.querySelector('.navbar');
@@ -143,9 +142,21 @@ const form4 = document.querySelector('#assistant4');
 const form5 = document.querySelector('#assistant5');
 const form6 = document.querySelector('#assistant6');
 const form7 = document.querySelector('#assistant7');
+// values
+// const device = document.getElementsByName('device');
+
+// for (var i = 0, length = device.length; i < length; i++) {
+//     if (device[i].checked) {
+//         // do whatever you want with the checked radio
+//         alert(device[i].value);
+
+//         // only one radio can be logically checked, don't check the rest
+//         break;
+//     }
+// }
 
 const formArr = [form1, form2, form3, form4, form5, form6, form7];
-try{
+try {
     next1.onclick = () => {
         formArr.forEach((element) => {
             element.style = "transform: translateX(-100%);"
@@ -223,8 +234,7 @@ try{
             element.style = "transform: translateX(-500%);"
         });
     }
-}catch (e) {}
-
+} catch (e) {}
 
 // Contact form
 const sendContactButton = document.getElementById('send-contact-form');
@@ -234,25 +244,27 @@ const username = document.getElementById('inputUserName');
 const affair = document.getElementById('inputAffair');
 const msg = document.getElementById('inputComments');
 
-affair.addEventListener('change', () => {
-    if(affair != null){
-        username.addEventListener('change', () => {
-            if(username != null){
-                mail.addEventListener('change', () => {
-                    if(mail != null){
-                        msg.addEventListener('change', () => {
-                            if(msg != null){
-                                sendContactButton.onclick = () => {
-                                    swal("Mensaje enviado", "", "success");
+try {
+    affair.addEventListener('change', () => {
+        if (affair != null) {
+            username.addEventListener('change', () => {
+                if (username != null) {
+                    mail.addEventListener('change', () => {
+                        if (mail != null) {
+                            msg.addEventListener('change', () => {
+                                if (msg != null) {
+                                    sendContactButton.onclick = () => {
+                                        swal("Mensaje enviado", "", "success");
+                                    }
+                                    setTimeout(() => {
+                                        window.location.reload();
+                                    }, 1500);
                                 }
-                                setTimeout(() => {
-                                    window.location.reload();
-                                }, 1500);
-                            }
-                        })
-                    }
-                })
-            }
-        });
-    }
-});
+                            })
+                        }
+                    })
+                }
+            });
+        }
+    });
+} catch (e) {}
