@@ -1,5 +1,5 @@
 @media (min-width: $generic-lap) {
-    .navbar--container{
+    .navbar--container {
         padding: 15px 70px 15px 70px;
     }
     .askprint {
@@ -47,19 +47,110 @@
     .mps {
         background-image: url('images/LAP/SAI.png');
     }
-    .sad{
+    .sad {
         background-image: url('images/LAP/SAD.png');
     }
     .footer--container {
         padding: 40px 40px;
     }
-    .devices{
+    .devices {
         width: $generic-lap;
         margin: 0 auto;
     }
-    .assistant{
-        &__form{
+    .assistant {
+        &__body {
+            &--box {
+                width: 100%;
+                padding: 10px;
+                height: 128px;
+            }
+            &--text {
+                line-height: 2rem;
+                font-size: 1.4rem;
+                padding: 10px;
+            }
+            &--title {
+                font-size: 1.4rem;
+                margin: 10px;
+            }
+            &--check-item {
+                transform: translate(5px, -18px);
+                margin: 18px 0;
+                width: 100%;
+                height: 38px;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                & span {
+                    margin-left: 3px;
+                }
+            }
+        }
+        &__box {
+            margin: 10px 15px;
+            width: 285px;
+            height: 265px;
+        }
+        &__footer {
+            &--box {
+                width: 100%;
+                height: 22px;
+                width: 100%;
+            }
+            &--input {
+                margin: 5px;
+            }
+        }
+        &__form {
             width: $generic-lap;
+            margin: 0 auto;
+            &--header {
+                padding: 20px 10px;
+                width: 100%;
+                height: 100%;
+            }
+            &--contact {
+                margin: 15px auto;
+                width: 300px;
+                &-item {
+                    margin: 0 auto;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    margin: 10px 0;
+                    & span {
+                        padding: 5px;
+                    }
+                    & input {
+                        margin-top: 8px;
+                    }
+                    & select {
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+        &__head-title {
+            font-size: 2.7rem;
+            margin: 0 auto;
+            height: 100%;
+            width: 80%;
+        }
+        &__header {
+            &--box {
+                height: 80px;
+            }
+        }
+    }
+    .form {
+        &__button {
+            height: 100%;
+            margin: 10px;
+            padding: 10px;
+            & button {
+                margin: 0 10px;
+            }
+        }
+        &__container {
+            padding: 35px 10px;
         }
     }
 }

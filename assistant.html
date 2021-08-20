@@ -23,6 +23,8 @@
   <link
     src="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <!-- FontAwesome -->
   <link src="./assets/css/all.css" rel="stylesheet">
   <!-- Favicon -->
@@ -92,7 +94,7 @@
             </figure>
             <div class="assistant__body--box">
               <p class="assistant__body--title">IMPRESORA</p>
-              <p class="assistant__body--text">Quiero una Impresora a medida de mi presupuesto.</p>
+              <p class="assistant__body--text">Quiero una Impresora que se ajuste a mi presupuesto.</p>
             </div>
             <div class="assistant__footer--box">
               <input class="assistant__footer--input" name="intent" type="radio">
@@ -104,8 +106,8 @@
                 aria-hidden="true">
             </figure>
             <div class="assistant__body--box">
-              <p class="assistant__body--title">MULTIFUNCIONAL (COPIA-IMPRESIÓN-ESCANEO)</p>
-              <p class="assistant__body--text">Elegir una Impresora de nuestro catalogo.</p>
+              <p class="assistant__body--title">MULTIFUNCIONAL</p>
+              <p class="assistant__body--text">Quiero una impresora que pueda copiar, escanear e imprimir</p>
             </div>
             <div class="assistant__footer--box">
               <input class="assistant__footer--input" name="intent" type="radio">
@@ -178,37 +180,42 @@
           <h2 class="assistant__head-title">¿Qué tamaños de papel necesita?</h2>
         </div>
         <div class="form__container">
-          <label class="assistant__box">
+          <div class="assistant__box">
             <figure class="assistant__header--box">
               <img class="icon-print svg" src="./images/icons/IM.svg" alt="impresora.icon" aria-hidden="true">
             </figure>
             <div class="assistant__body--box">
-              <p class="assistant__body--title">MEDIDAS</p>
-              <div class="assistant__footer--box">
-                <input class="assistant__footer--input" name="intent" type="checkbox">Media Carta (8.5" * 5.5")
-                <input class="assistant__footer--input" name="intent" type="checkbox">Carta (8.5" * 11")
-                <input class="assistant__footer--input" name="intent" type="checkbox">Oficio (8.5" * 14")
-              </div>
+              <label class="assistant__body--check-item">
+                <input class="assistant__footer--input" name="intent" type="checkbox"><span>Media Carta (8.5" *
+                  5.5")</span>
+              </label>
+              <label class="assistant__body--check-item">
+                <input class="assistant__footer--input" name="intent" type="checkbox"><span>Carta (8.5" * 11")</span>
+              </label>
+              <label class="assistant__body--check-item">
+                <input class="assistant__footer--input" name="intent" type="checkbox"><span>Oficio (8.5" * 14")</span>
+              </label>
             </div>
-          </label>
+          </div>
+          <div class="assistant__box">
+            <figure class="assistant__header--box">
+              <img class="icon-print svg" src="./images/icons/IM.svg" alt="impresora.icon" aria-hidden="true">
+            </figure>
+            <div class="assistant__body--box">
+              <label class="assistant__body--check-item">
+                <input class="assistant__footer--input" name="intent" type="checkbox"><span>Doble Carta (11" *
+                  17")</span>
+              </label>
+              <label class="assistant__body--check-item">
+                <input class="assistant__footer--input" name="intent" type="checkbox"><span>Doble Carta Rebasado <br>
+                  (12" * 18")</span>
+              </label>
+            </div>
+          </div>
         </div>
-        <div class="form__container">
-          <label class="assistant__box">
-            <figure class="assistant__header--box">
-              <img class="icon-print svg" src="./images/icons/IM.svg" alt="impresora.icon" aria-hidden="true">
-            </figure>
-            <div class="assistant__body--box">
-              <p class="assistant__body--title">MEDIDAS</p>
-              <div class="assistant__footer--box">
-                <input class="assistant__footer--input" name="intent" type="checkbox">Doble Carta (11" * 17")
-                <input class="assistant__footer--input" name="intent" type="checkbox">Doble Carta Rebasado (12" * 18")
-              </div>
-            </div>
-            <div class="form__button">
-              <button class="btn--readmore" id="back-button3" type="button">Regresar</button>
-              <button class="btn--readmore" id="next-button3" type="button">Siguiente</button>
-            </div>
-          </label>
+        <div class="form__button">
+          <button class="btn--readmore" id="back-button3" type="button">Regresar</button>
+          <button class="btn--readmore" id="next-button3" type="button">Siguiente</button>
         </div>
       </form>
     </div>
@@ -220,34 +227,40 @@
           <h2 class="assistant__head-title">¿Cuál es su volumen mensual?</h2>
         </div>
         <div class="form__container">
-          <label class="assistant__box">
+          <div class="assistant__box">
             <figure class="assistant__header--box">
               <img class="icon-print svg" src="./images/icons/IM.svg" alt="impresora.icon" aria-hidden="true">
             </figure>
             <div class="assistant__body--box">
-              <div class="assistant__footer--box">
-                <input class="assistant__footer--input" name="intent" type="checkbox">de 0 a 5,000 click´s (copias o
-                impresiones)
-                <input class="assistant__footer--input" name="intent" type="checkbox">de 5,001 a 10,000 click´s (copias
-                o impresiones)
-                <input class="assistant__footer--input" name="intent" type="checkbox">de 10,001 a 15,000 click´s (copias
-                o impresiones)
-              </div>
+              <label class="assistant__body--check-item">
+                <input class="assistant__footer--input" name="intent" type="checkbox"><span>De 0 a 5,000 click´s <br>
+                  (copias o impresiones)</span>
+              </label>
+              <label class="assistant__body--check-item">
+                <input class="assistant__footer--input" name="intent" type="checkbox"><span>De 5,001 a 10,000 click´s
+                  <br> (copias o impresiones)</span>
+              </label>
+              <label class="assistant__body--check-item">
+                <input class="assistant__footer--input" name="intent" type="checkbox"><span>De 10,001 a 15,000 click´s
+                  <br> (copias o impresiones)</span>
+              </label>
             </div>
-          </label>
-          <label class="assistant__box">
+          </div>
+          <div class="assistant__box">
             <figure class="assistant__header--box">
               <img class="icon-print svg" src="./images/icons/IM.svg" alt="impresora.icon" aria-hidden="true">
             </figure>
             <div class="assistant__body--box">
-              <div class="assistant__footer--box">
-                <input class="assistant__footer--input" name="intent" type="checkbox">de 15,001 a 20,000 click´s (copias
-                o impresiones)
-                <input class="assistant__footer--input" name="intent" type="checkbox">de 20,001 en adelante click´s
-                (copias o impresiones)
-              </div>
+              <label class="assistant__body--check-item">
+                <input class="assistant__footer--input" name="intent" type="checkbox"><span>De 15,001 a 20,000 click´s
+                  <br> (copias o impresiones)</span>
+              </label>
+              <label class="assistant__body--check-item">
+                <input class="assistant__footer--input" name="intent" type="checkbox"><span>De 20,001 en adelante
+                  click´s <br> (copias o impresiones)</span>
+              </label>
             </div>
-          </label>
+          </div>
         </div>
         <div class="form__button">
           <button class="btn--readmore" id="back-button4" type="button">Regresar</button>
@@ -263,44 +276,7 @@
           <h2 class="assistant__head-title">¿De cuánto es su presupuesto aproximado?</h2>
         </div>
         <div class="form__container">
-          <label class="assistant__box">
-            <figure class="assistant__header--box">
-              <img class="icon-print svg" src="./images/icons/IM.svg" alt="impresora.icon" aria-hidden="true">
-            </figure>
-            <div class="assistant__body--box">
-              <p class="assistant__body--title">IMPRESORA</p>
-              <p class="assistant__body--text">Quiero una Impresora a medida de mi presupuesto.</p>
-            </div>
-            <div class="assistant__footer--box">
-              <input class="assistant__footer--input" name="intent" type="radio">
-            </div>
-          </label>
-          <label class="assistant__box">
-            <figure class="assistant__header--box">
-              <img class="multifunciona-icon svg" src="./images/icons/mp51.svg" alt="multifuncional.icon"
-                aria-hidden="true">
-            </figure>
-            <div class="assistant__body--box">
-              <p class="assistant__body--title">MULTIFUNCIONAL (COPIA-IMPRESIÓN-ESCANEO)</p>
-              <p class="assistant__body--text">Elegir una Impresora de nuestro catalogo.</p>
-            </div>
-            <div class="assistant__footer--box">
-              <input class="assistant__footer--input" name="intent" type="radio">
-            </div>
-          </label>
-          <label class="assistant__box">
-            <figure class="assistant__header--box">
-              <img class="multifunciona-icon svg" src="./images/icons/mp51.svg" alt="multifuncional.icon"
-                aria-hidden="true">
-            </figure>
-            <div class="assistant__body--box">
-              <p class="assistant__body--title">FORMATO AMPLIO</p>
-              <p class="assistant__body--text">Recarga, reparacion y mantenimiento de Impresoras y multifuncionales.</p>
-            </div>
-            <div class="assistant__footer--box">
-              <input class="assistant__footer--input" name="intent" type="radio">
-            </div>
-          </label>
+          <!-- BUDGETS RANGE -->
         </div>
         <div class="form__button">
           <button class="btn--readmore" id="back-button5" type="button">Regresar</button>
@@ -315,44 +291,7 @@
           <h2 class="assistant__head-title">¿Cuándo planeas realizar tu compra?</h2>
         </div>
         <div class="form__container">
-          <label class="assistant__box">
-            <figure class="assistant__header--box">
-              <img class="icon-print svg" src="./images/icons/IM.svg" alt="impresora.icon" aria-hidden="true">
-            </figure>
-            <div class="assistant__body--box">
-              <p class="assistant__body--title">IMPRESORA</p>
-              <p class="assistant__body--text">Quiero una Impresora a medida de mi presupuesto.</p>
-            </div>
-            <div class="assistant__footer--box">
-              <input class="assistant__footer--input" name="intent" type="radio">
-            </div>
-          </label>
-          <label class="assistant__box">
-            <figure class="assistant__header--box">
-              <img class="multifunciona-icon svg" src="./images/icons/mp51.svg" alt="multifuncional.icon"
-                aria-hidden="true">
-            </figure>
-            <div class="assistant__body--box">
-              <p class="assistant__body--title">MULTIFUNCIONAL (COPIA-IMPRESIÓN-ESCANEO)</p>
-              <p class="assistant__body--text">Elegir una Impresora de nuestro catalogo.</p>
-            </div>
-            <div class="assistant__footer--box">
-              <input class="assistant__footer--input" name="intent" type="radio">
-            </div>
-          </label>
-          <label class="assistant__box">
-            <figure class="assistant__header--box">
-              <img class="multifunciona-icon svg" src="./images/icons/mp51.svg" alt="multifuncional.icon"
-                aria-hidden="true">
-            </figure>
-            <div class="assistant__body--box">
-              <p class="assistant__body--title">FORMATO AMPLIO</p>
-              <p class="assistant__body--text">Recarga, reparacion y mantenimiento de Impresoras y multifuncionales.</p>
-            </div>
-            <div class="assistant__footer--box">
-              <input class="assistant__footer--input" name="intent" type="radio">
-            </div>
-          </label>
+          <!-- URGENCY CONTENT -->
         </div>
         <div class="form__button">
           <button class="btn--readmore" id="back-button6" type="button">Regresar</button>
@@ -366,60 +305,70 @@
         <div class="assistant__form--header">
           <h2 class="assistant__head-title">Ingresa tus datos de contacto</h2>
         </div>
-        <label for="">
-          "Correo electrónico"
-          <input type="email" minlength="3" maxlength="50" placeholder="example@lucsax.com" autocomplete="email"
-            required>
-        </label>
-        <label for="">
-          "Nombre completo"
-          <input type="text" minlength="9" placeholder="Diego Martínez" autocomplete="name" required>
-        </label>
-        <label for="">
-          "Numero telefonico"
-          <input type="tel" minlength="10" maxlength="15"  placeholder="(55) XXXX-XXXX"
-            autocomplete="tel-area-code" required>
-        </label>
-        <label for="">
-          "¿De qué ciudad nos escribe?"
-          <select name="estado" required>
-            <option value="">Seleccione uno...</option>
-            <option value="Aguascalientes">Aguascalientes</option>
-            <option value="Baja California">Baja California</option>
-            <option value="Baja California Sur">Baja California Sur</option>
-            <option value="Campeche">Campeche</option>
-            <option value="Chiapas">Chiapas</option>
-            <option value="Chihuahua">Chihuahua</option>
-            <option value="CDMX">Ciudad de México</option>
-            <option value="Coahuila">Coahuila</option>
-            <option value="Colima">Colima</option>
-            <option value="Durango">Durango</option>
-            <option value="Estado de México">Estado de México</option>
-            <option value="Guanajuato">Guanajuato</option>
-            <option value="Guerrero">Guerrero</option>
-            <option value="Hidalgo">Hidalgo</option>
-            <option value="Jalisco">Jalisco</option>
-            <option value="Michoacán">Michoacán</option>
-            <option value="Morelos">Morelos</option>
-            <option value="Nayarit">Nayarit</option>
-            <option value="Nuevo León">Nuevo León</option>
-            <option value="Oaxaca">Oaxaca</option>
-            <option value="Puebla">Puebla</option>
-            <option value="Querétaro">Querétaro</option>
-            <option value="Quintana Roo">Quintana Roo</option>
-            <option value="San Luis Potosí">San Luis Potosí</option>
-            <option value="Sinaloa">Sinaloa</option>
-            <option value="Sonora">Sonora</option>
-            <option value="Tabasco">Tabasco</option>
-            <option value="Tamaulipas">Tamaulipas</option>
-            <option value="Tlaxcala">Tlaxcala</option>
-            <option value="Veracruz">Veracruz</option>
-            <option value="Yucatán">Yucatán</option>
-            <option value="Zacatecas">Zacatecas</option>
-          </select>
-        </label>
-          <div class="form__button">
-            <button class="btn--readmore" id="back-button7" type="button">Regresar</button>
+        <div class="assistant__form--contact">
+          <div class="assistant__form--contact-item">
+            <label for="">
+              <span>Correo electrónico</span>
+              <input type="email" minlength="3" placeholder="example@lucsax.com" autocomplete="email"
+                required>
+            </label>
+          </div>
+          <div class="assistant__form--contact-item">
+            <label for="">
+              <span>Nombre completo</span>
+              <input type="text" minlength="5" placeholder="Diego Martínez" autocomplete="name" required>
+            </label>
+          </div>
+          <div class="assistant__form--contact-item">
+            <label for="">
+              <span>Numero telefonico</span>
+              <input type="tel" minlength="10" maxlength="15" placeholder="(55) XXXX-XXXX" autocomplete="tel-area-code"
+                required>
+            </label>
+          </div>
+          <div class="assistant__form--contact-item">
+            <label for="">
+              <span>¿De qué ciudad nos escribe?</span>
+              <select name="estado" required>
+                <option value="">Seleccione uno...</option>
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="Baja California">Baja California</option>
+                <option value="Baja California Sur">Baja California Sur</option>
+                <option value="Campeche">Campeche</option>
+                <option value="Chiapas">Chiapas</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="CDMX">Ciudad de México</option>
+                <option value="Coahuila">Coahuila</option>
+                <option value="Colima">Colima</option>
+                <option value="Durango">Durango</option>
+                <option value="Estado de México">Estado de México</option>
+                <option value="Guanajuato">Guanajuato</option>
+                <option value="Guerrero">Guerrero</option>
+                <option value="Hidalgo">Hidalgo</option>
+                <option value="Jalisco">Jalisco</option>
+                <option value="Michoacán">Michoacán</option>
+                <option value="Morelos">Morelos</option>
+                <option value="Nayarit">Nayarit</option>
+                <option value="Nuevo León">Nuevo León</option>
+                <option value="Oaxaca">Oaxaca</option>
+                <option value="Puebla">Puebla</option>
+                <option value="Querétaro">Querétaro</option>
+                <option value="Quintana Roo">Quintana Roo</option>
+                <option value="San Luis Potosí">San Luis Potosí</option>
+                <option value="Sinaloa">Sinaloa</option>
+                <option value="Sonora">Sonora</option>
+                <option value="Tabasco">Tabasco</option>
+                <option value="Tamaulipas">Tamaulipas</option>
+                <option value="Tlaxcala">Tlaxcala</option>
+                <option value="Veracruz">Veracruz</option>
+                <option value="Yucatán">Yucatán</option>
+                <option value="Zacatecas">Zacatecas</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="form__button">
+          <button class="btn--readmore" id="back-button7" type="button">Regresar</button>
           <button class="btn--readmore" id="next-button7" type="submit">Enviar</button>
         </div>
       </form>
